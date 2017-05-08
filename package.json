@@ -1,0 +1,40 @@
+{
+  "name": "tetris",
+  "version": "1.0.0",
+  "description": "Tetris for one person",
+  "main": "test.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "webpack-dev-server --hot --host 0.0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "perparing"
+  },
+  "keywords": [
+    "['game'",
+    "'tetris'",
+    "'2d']"
+  ],
+  "author": "Hyunsoo (Eat2go)",
+  "license": "ISC",
+  "dependencies": {
+    "material-ui": "^0.18.0",
+    "yo": "^1.8.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.0",
+    "babel-plugin-transform-function-bind": "^6.22.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-2017": "0.0.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-es2017": "^6.22.0",
+    "material-ui": "^0.18.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "requirejs": "^2.3.3",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  }
+}

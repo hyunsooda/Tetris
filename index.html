@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <style>
+        .material-icons {
+            display: inline-block;
+            width : 25px;
+            position : absolute;
+        }
+
+        .box_game_board {
+            width : 30%;
+            height : 80%;
+            position : absolute;
+            left : 40%;
+            top : 200px;
+            border : none;
+            
+        }
+
+        #gameOver {
+            position : absolute;
+            left : 39%;
+            top : 210px;
+            background : rgba(69, 90, 100,0.5);
+            border : thin solid rgba(0,0,0,0.6);
+            color : #eeeeee;
+            display : none;
+        }
+
+        #preview {
+            position : absolute;
+            left : 60%;
+            top : 200px;
+            border : 3px solid #90A4AE;
+            background : rgba(207, 216, 220,0.9);
+        }
+
+        #copyright {
+            position : absolute;
+            left : 40%;
+            top : 70%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="box_game_board">
+        <canvas id='gameBoard' width='400' height='500'> </canvas>
+    </div>
+
+    <div id='title'> </div>
+    <div id='scoreBoard'> </div>
+    <div id='copyright'> 
+        <i class="material-icons" style='left:-30px; top:15px;' >help outline</i> <h5>     http://eat2go.tistory.com/   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   http://cafe.naver.com/artofthings</h5> 
+    </div>
+
+
+    <canvas id='gameOver' width='250' height='250'> </canvas> 
+
+    <canvas id='preview' width='150' height='200'> </canvas>
+
+    <audio src='sounds/blockDown.mp3.mov' id='blockDownSound' > </audio>
+    <audio src='sounds/lineClear.mp3.mov' id='lineClearSound'> </audio>
+    <audio src='sounds/gameOverSound.mov' id='gameOverSound'> </audio>
+    <audio src='sounds/createIDSound.mov' id='createIDSound'> </audio>
+
+</body>
+
+<script>
+    
+const ctx = document.querySelector('#gameBoard').getContext('2d'),
+      gameOverCtx = document.querySelector('#gameOver').getContext('2d'),
+      previewBlock = document.querySelector('#preview').getContext('2d');
+
+
+
+</script>
+
+
+
+
+
+<!-- import,export를 쓰지않고 script태그로 로드한 이유 : import,export를 쓰면 ES5로 변환해야하는데 ES5로변환된코드는 디버깅하기가 힘들기 때문. -->
+<script src='game_over.js'></script>
+<script src='blockDownAudio.js'> </script>
+
+<script src='translate_basic_logic.js'> </script>
+
+
+</html>
